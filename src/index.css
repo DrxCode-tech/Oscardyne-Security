@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional custom styles */
+body {
+  @apply bg-gray-900 text-gray-900;
+}
+
+#google_translate_element select {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-weight: bold;
+}
+#google_translate_element select option {
+  background: white;
+  color: black;
+}
+
+a {
+  @apply text-blue-600 hover:underline;
+}
+
+button {
+  @apply bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.card {
+  @apply bg-white shadow-md rounded-lg p-6;
+}
+
+.navbar {
+  @apply bg-white shadow p-4 flex justify-between items-center;
+}
+
+.footer {
+  @apply bg-gray-800 text-gray-300 p-6 text-center;
+}
+
+.input {
+  @apply border border-gray-300 rounded px-4 py-2 w-full;
+}
+
+/* ============================
+   Google Translate - fixed bottom center
+   ============================ */
+
+/* Wrapper that holds the google widget - out of document flow */
+#translate-wrapper {
+  position: fixed !important;
+  bottom: 20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 9999 !important;
+  pointer-events: auto !important;
+  display: inline-block !important;
+  width: auto !important;
+  background: transparent !important;
+}
+
+/* The actual widget element: keep it inline inside the wrapper */
+#google_translate_element {
+  display: inline-block !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Prevent google from inserting a top banner or pushing the body down */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-menu-frame.skiptranslate,
+.goog-te-balloon-frame {
+  display: none !important;
+  height: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Reset any inline positioning Google injects into page elements */
+.skiptranslate, .skiptranslate * {
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+  position: static !important;
+  transform: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* If Google injects a style on <body> (it sometimes sets top), reset it */
+body {
+  top: 0 !important;
+  transform: none !important;
+}
+
+/* Small styling to match your theme */
+#google_translate_element select {
+  background: rgba(255,255,255,0.08) !important;
+  color: white !important;
+  border-radius: 9999px !important;
+  padding: 0.375rem 0.75rem !important;
+  border: none !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+
+/* Make dropdown options readable when the menu opens */
+#google_translate_element select option {
+  background: white !important;
+  color: black !important;
+}
+
+/* Safety: in case google injects html[dir="rtl"] that flips layout */
+html[dir="rtl"] #translate-wrapper {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+}
