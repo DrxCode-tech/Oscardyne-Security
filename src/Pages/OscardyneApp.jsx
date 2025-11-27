@@ -451,7 +451,7 @@ function Contact() {
 
       const data = await res.json();
       if (res.ok) {
-        setMsg("Request submitted successfully. Oscardyne will contact you shortly.");
+        setMsg("Request submitted successfully!");
         e.target.reset();
       } else {
         setMsg("Failed to send request. Try again.");
