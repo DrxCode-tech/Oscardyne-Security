@@ -629,7 +629,7 @@ function Footer() {
             </div>
 
             <button
-              onClick={() => navigate("/jobs")}
+              onClick={() => navigate("/admin")}
               className="px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-lg shadow-md hover:shadow-blue-600/30 hover:scale-105 transition-all"
             >
               View Job Applications
