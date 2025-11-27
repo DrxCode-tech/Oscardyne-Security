@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import CareerDashboard from "./Page";
+import CareerDashboard from "./Pages";
 import ContactReports from "./ContactReports";
 
 export default function AdminRouter() {
