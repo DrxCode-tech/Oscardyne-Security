@@ -611,88 +611,96 @@ function AIChat() {
 function Footer() {
   const navigate = useNavigate();
   return (
-    <footer className="py-10 mt-12 border-t border-white/10 bg-black/90">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+    <footer className="w-full bg-black/95 border-t border-white/10 mt-16 backdrop-blur-xl">
+      <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-12">
 
-        {/* Logo + Copyright */}
-        <div>
-          <div className="flex items-center gap-3">
-            <img
-              src={LogoImg}
-              alt="logo"
-              className="h-10 w-10 object-contain rounded-md"
-            />
-            <div className="font-bold text-white">Oscardyne Security Logistics</div>
+        {/* LOGO + COPYRIGHT */}
+        <div className="flex flex-col justify-between">
+          <div>
+            <div className="flex items-center gap-3 mb-3">
+              <img
+                src={LogoImg}
+                alt="logo"
+                className="h-12 w-12 object-contain rounded-lg shadow-md"
+              />
+              <h2 className="text-lg font-bold text-white tracking-wide">
+                Oscardyne Security Logistics
+              </h2>
+            </div>
+
+            <button
+              onClick={() => navigate("/jobs")}
+              className="px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-lg shadow-md hover:shadow-blue-600/30 hover:scale-105 transition-all"
+            >
+              View Job Applications
+            </button>
           </div>
-          <button onClick={() => navigate('/jobs')} className="mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
-            View Job Applications
-          </button>
 
-          <p className="text-gray-400 text-sm mt-3">
-            © {new Date().getFullYear()} Oscardyne. All rights reserved.
+          <p className="text-gray-400 text-xs mt-6">
+            © {new Date().getFullYear()} Oscardyne Security Logistics.  
+            <br />All rights reserved.
           </p>
         </div>
 
-        {/* Company Links */}
-        <div className="flex gap-12 text-sm text-gray-300">
+        {/* COMPANY LINKS */}
+        <div className="grid grid-cols-2 gap-10">
           <div>
-            <div className="font-semibold text-white mb-2">Company</div>
-            <a href="#about" className="block hover:text-white">About</a>
-            <a href="#careers" className="block hover:text-white">Careers</a>
-            <a href="#contact" className="block hover:text-white">Contact</a>
+            <h3 className="text-white font-semibold mb-3 tracking-wide">Company</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li><a href="#about" className="hover:text-white transition">About</a></li>
+              <li><a href="#careers" className="hover:text-white transition">Careers</a></li>
+              <li><a href="#contact" className="hover:text-white transition">Contact</a></li>
+            </ul>
           </div>
 
           <div>
-            <div className="font-semibold text-white mb-2">Legal</div>
-            <a href="#" className="block hover:text-white">Terms</a>
-            <a href="#" className="block hover:text-white">Privacy</a>
-            <a href="#" className="block hover:text-white">Cookies</a>
+            <h3 className="text-white font-semibold mb-3 tracking-wide">Legal</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li><a href="#" className="hover:text-white transition">Terms</a></li>
+              <li><a href="#" className="hover:text-white transition">Privacy</a></li>
+              <li><a href="#" className="hover:text-white transition">Cookies</a></li>
+            </ul>
           </div>
         </div>
 
-        {/* Socials + Trust */}
-        <div className="flex flex-col items-start gap-4">
-
+        {/* SOCIAL + TRUST */}
+        <div className="space-y-8">
+          {/* Socials */}
           <div>
-            <div className="font-semibold text-white mb-2">Follow Us</div>
+            <h3 className="text-white font-semibold mb-3 tracking-wide">Follow Us</h3>
+            <div className="flex items-center gap-5">
+              <a href="https://linkedin.com" target="_blank" className="text-gray-400 hover:text-blue-400 transition">
+                <FaLinkedin size={22} />
+              </a>
+              <a href="https://wa.me/14034721928" target="_blank" className="text-gray-400 hover:text-green-400 transition">
+                <FaWhatsapp size={22} />
+              </a>
+              <a href="https://facebook.com" target="_blank" className="text-gray-400 hover:text-blue-500 transition">
+                <FaFacebook size={22} />
+              </a>
+              <a href="https://instagram.com" target="_blank" className="text-gray-400 hover:text-pink-400 transition">
+                <FaInstagram size={22} />
+              </a>
+              <a href="https://youtube.com" target="_blank" className="text-gray-400 hover:text-red-500 transition">
+                <FaYoutube size={24} />
+              </a>
+            </div>
+          </div>
 
+          {/* Trust Badges */}
+          <div>
+            <h3 className="text-white font-semibold mb-3 tracking-wide">Trusted By</h3>
             <div className="flex items-center gap-4">
-              <a href="https://www.linkedin.com" target="_blank" className="hover:text-white text-gray-400">
-                <FaLinkedin size={20} />
-              </a>
-
-              <a href="https://wa.me/14034721928" target="_blank" className="hover:text-white text-gray-400">
-                <FaWhatsapp size={20} />
-              </a>
-
-              <a href="https://facebook.com" target="_blank" className="hover:text-white text-gray-400">
-                <FaFacebook size={20} />
-              </a>
-
-              <a href="https://instagram.com" target="_blank" className="hover:text-white text-gray-400">
-                <FaInstagram size={20} />
-              </a>
-
-              <a href="https://youtube.com" target="_blank" className="hover:text-white text-gray-400">
-                <FaYoutube size={22} />
-              </a>
+              <img src={Badge1} alt="badge" className="h-12 opacity-90 hover:opacity-100 transition" />
+              <img src={Badge2} alt="badge" className="h-12 opacity-90 hover:opacity-100 transition" />
             </div>
           </div>
-
-          <div>
-            <div className="font-semibold text-white mb-2">Trusted By</div>
-            <div className="flex items-center gap-3">
-              <img src={Badge1} alt="badge" className="h-10" />
-              <img src={Badge2} alt="badge" className="h-10" />
-            </div>
-          </div>
-
         </div>
-
       </div>
     </footer>
   );
 }
+
 
 
 // ------------------ Main App ------------------
