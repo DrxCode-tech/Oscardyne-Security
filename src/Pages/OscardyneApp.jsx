@@ -570,7 +570,7 @@ function AIChat() {
 
 
   return (
-    <div className="w-full max-w-3xl mx-auto my-10 p-6 rounded-3xl bg-black/50 backdrop-blur-xl shadow-[0_15px_40px_rgba(0,0,0,0.5)]">
+    <div id="oscardyne_ai" className="w-full max-w-3xl mx-auto my-10 p-6 rounded-3xl bg-black/50 backdrop-blur-xl shadow-[0_15px_40px_rgba(0,0,0,0.5)]">
       <div className="text-center mb-6">
         <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-400">Oscard Security AI</h2>
       </div>
