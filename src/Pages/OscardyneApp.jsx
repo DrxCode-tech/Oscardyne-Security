@@ -354,7 +354,7 @@ function Careers() {
         setForm({ name: "", email: "", phone: "" });
         setSelectedFile(null);
       } else {
-        setMessage(result.message || "Something went wrong.");
+        setMessage("Something went wrong.");
       }
     } catch (err) {
       console.error(err);
