@@ -266,7 +266,6 @@ function WhyUs() {
               <li key={i} className="flex items-start gap-3 text-gray-300"><span className="mt-1 text-blue-400 font-bold">•</span><span>{p}</span></li>
             ))}
           </ul>
-          <div className="mt-6 flex gap-4 items-center"><img src={Badge1} alt="badge" className="h-10" /><img src={Badge2} alt="badge" className="h-10" /></div>
         </div>
 
         <div className="rounded-2xl overflow-hidden bg-white/4 backdrop-blur-lg border border-white/8 p-6">
@@ -424,7 +423,7 @@ function Careers() {
   );
 }
 
-// ------------------ Contact ------------------
+// ------------------ Contact ------------------ //
 
 function Contact() {
   const [loading, setLoading] = useState(false);
