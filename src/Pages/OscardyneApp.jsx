@@ -3,7 +3,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, Mail, MapPin, Send, Loader2, Home, Bot, PlayCircle, ShieldCheck, MessageCircle, LogOut } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaWhatsapp, FaXTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
+<a href="https://x.com" target="_blank" className="text-gray-400 hover:text-red-500 transition">
+  <FaXTwitter size={24} />
+</a>
 
 
 import ReactMarkdown from "react-markdown";
