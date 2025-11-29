@@ -18,7 +18,7 @@ import cyber from "../assets/cyber.jpg";
 import info from "../assets/info.jpg";
 import commercial from "../assets/commercial.jpg";
 import resident from "../assets/resident.jpg";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
 
 import HeroImg from "../assets/Security1.jpg";
 import Service1 from "../assets/Security2.jpg";
