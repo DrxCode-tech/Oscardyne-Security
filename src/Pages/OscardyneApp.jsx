@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, Mail, MapPin, Send, Loader2, Home, Bot, PlayCircle, ShieldCheck,MessageCircle } from "lucide-react";
+import { Menu, X, Phone, Mail, MapPin, Send, Loader2, Home, Bot, PlayCircle, ShieldCheck,MessageCircle, LogOut } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaWhatsapp } from "react-icons/fa";
@@ -18,6 +18,7 @@ import cyber from "../assets/cyber.jpg";
 import info from "../assets/info.jpg";
 import commercial from "../assets/commercial.jpg";
 import resident from "../assets/resident.jpg";
+import logo from "../assets/logo.jpg";
 
 import HeroImg from "../assets/Security1.jpg";
 import Service1 from "../assets/Security2.jpg";
@@ -51,7 +52,7 @@ function Nav({ onOpen }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
-            <img src={LogoImg} alt="Oscardyne Logo" className="h-12 w-12 object-contain rounded-md" />
+            <img src={logo} alt="Oscardyne Logo" className="h-12 w-12 object-contain rounded-md" />
             <div className="text-xl md:text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-400">
               Oscardyne Security Logistics
             </div>
@@ -145,7 +146,7 @@ function ParallaxHero() {
   const [offset, setOffset] = useState(0);
   const [index, setIndex] = useState(0);
   const tickRef = useRef(null);
-  const images = [Service1, Service2, Service3, Service4];
+  const images = [logo,Service1, Service2, Service3, Service4];
 
   useEffect(() => {
     const onScroll = () => {

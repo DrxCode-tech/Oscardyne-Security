@@ -1,4 +1,4 @@
-import { db } from "./firebaseAdmin"; // your admin SDK initializer
+//import { db } from "./firebaseAdmin"; // your admin SDK initializer
 import OpenAI from "openai";
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
@@ -30,7 +30,7 @@ Your goals:
    - an invitation to take action now
    - your official contact details:
      • Email: oscarfitnessco@gmail.com
-     • Phone: (403) 472 1928
+     • Phone: (403) 472 1938
 7. Keep everything personalised. Use the user’s name, property type, weaknesses, threat level, and selected services.
 
 Tone:
@@ -62,11 +62,11 @@ End of instructions.
         const aiReport = ai.choices[0].message.content;
 
         // 2. Save to Firestore
-        await db.collection("assessments").add({
+        /*await db.collection("assessments").add({
             ...form,
             aiReport,
             createdAt: new Date().toISOString(),
-        });
+        });*/
 
         // 3. Respond to frontend
         return res.status(200).json({
