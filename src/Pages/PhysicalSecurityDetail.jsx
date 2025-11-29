@@ -1,4 +1,3 @@
-
 import Layout from "./Layout";
 import BackButton from "./BackButton";
 import Service1 from "../assets/Security2.jpg";
@@ -33,16 +32,16 @@ export default function PhysicalSecurityDetail() {
 
                 {/* Content */}
                 <div className="max-w-5xl mx-auto flex flex-col gap-10">
-                    
+
                     {/* Overview */}
                     <article className="bg-white/5 backdrop-blur-xl rounded-2xl p-8 shadow-[0_10px_40px_rgba(0,120,255,0.2)] border border-white/10 transition-all hover:shadow-[0_15px_50px_rgba(0,120,255,0.35)]">
                         <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-blue-400">
                             Overview
                         </h2>
                         <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                            Physical security is the foundation of protecting individuals, businesses, and critical assets. 
-                            Our trained security guards and personnel ensure safety through proactive monitoring, controlled 
-                            access, and rapid response to incidents. From corporate facilities to residential properties, our 
+                            Physical security is the foundation of protecting individuals, businesses, and critical assets.
+                            Our trained security guards and personnel ensure safety through proactive monitoring, controlled
+                            access, and rapid response to incidents. From corporate facilities to residential properties, our
                             team tailors solutions to the unique needs of each client.
                         </p>
                     </article>
@@ -67,12 +66,12 @@ export default function PhysicalSecurityDetail() {
                             Why Choose Oscardyne Security
                         </h2>
                         <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-4">
-                            Our security personnel are rigorously trained, licensed, and equipped with the latest tools to 
-                            provide reliable protection. With years of experience across multiple sectors, we anticipate threats 
+                            Our security personnel are rigorously trained, licensed, and equipped with the latest tools to
+                            provide reliable protection. With years of experience across multiple sectors, we anticipate threats
                             before they arise and offer solutions tailored to your specific environment.
                         </p>
                         <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                            By integrating modern technology with professional human resources, we ensure a security approach 
+                            By integrating modern technology with professional human resources, we ensure a security approach
                             that is both proactive and responsive. Your safety is our top priority.
                         </p>
                     </article>

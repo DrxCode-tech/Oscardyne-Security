@@ -13,6 +13,12 @@ import "highlight.js/styles/github-dark.css"; // Or any highlight theme you like
 
 
 // Assets (ensure these exist in /src/assets)
+import physic from "../assets/physic.jpg";
+import cyber from "../assets/cyber.jpg";
+import info from "../assets/info.jpg";
+import commercial from "../assets/commercial.jpg";
+import resident from "../assets/resident.jpg";
+
 import HeroImg from "../assets/Security1.jpg";
 import Service1 from "../assets/Security2.jpg";
 import Service2 from "../assets/Security3.jpg";
@@ -208,12 +214,12 @@ function ParallaxHero() {
 // ------------------ Services ------------------
 function Services() {
   const items = [
-    { img: Service1, title: "Physical Security", desc: "Guards, surveillance, and access control to ensure safety of people and property.", link: "/physic-security" },
-    { img: Service2, title: "Cybersecurity", desc: "Threat detection, penetration testing, and incident response to protect digital assets.", link: "/cyber-security" },
-    { img: Service3, title: "Information Security", desc: "Data protection, compliance, and secure handling of sensitive information.", link: "/info-security" },
-    { img: Service4, title: "Event Security", desc: "Protecting crowds, managing access, and VIP protection for events.", link: "/event-security" },
-    { img: Service1, title: "Commercial Security", desc: "Safeguarding businesses and offices against theft, intrusion, and emergencies.", link: "/commercial-security" },
-    { img: Service2, title: "Residential Security", desc: "Home protection systems and security services for residential properties.", link: "/residential-security" },
+    { img: physic, title: "Physical Security", desc: "Guards, surveillance, and access control to ensure safety of people and property.", link: "/physic-security" },
+    { img: cyber, title: "Cybersecurity", desc: "Threat detection, penetration testing, and incident response to protect digital assets.", link: "/cyber-security" },
+    { img: info, title: "Information Security", desc: "Data protection, compliance, and secure handling of sensitive information.", link: "/info-security" },
+    { img: Service3, title: "Event Security", desc: "Protecting crowds, managing access, and VIP protection for events.", link: "/event-security" },
+    { img: commercial, title: "Commercial Security", desc: "Safeguarding businesses and offices against theft, intrusion, and emergencies.", link: "/commercial-security" },
+    { img: resident, title: "Residential Security", desc: "Home protection systems and security services for residential properties.", link: "/residential-security" },
   ];
 
   const navigate = useNavigate();
@@ -495,7 +501,7 @@ function Contact() {
             <h3 className="text-xl font-semibold text-white">Contact</h3>
             <div className="mt-3 text-gray-300 flex flex-col gap-2">
               <div className="flex items-center gap-2"><MapPin /> Calgary Alberta, Canada</div>
-              <div className="flex items-center gap-2"><Phone /> (403) 472 1928</div>
+              <div className="flex items-center gap-2"><Phone /> (403) 472 1938</div>
               <div className="flex items-center gap-2"><Mail /> oscarfitnessco@gmail.com</div>
             </div>
 
