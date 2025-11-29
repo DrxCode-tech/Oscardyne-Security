@@ -289,7 +289,7 @@ function WhyUs() {
 
 // ------------------ Testimonials (fixed typo 'delay') ------------------
 function Testimonials() {
-  const t = [{ quote: "Reliable and professional. We use them for our corporate sites.", name: "Ibrahim, Ops Manager" }, { quote: "Fast response and well-trained guards.", name: "Chinyere, Events Co." }];
+  const t = [{ quote: "Reliable and professional. We use them for our corporate sites.", name: "Michael Carter, Ops Manager" }, { quote: "Fast response and well-trained guards.", name: "Emily Johnson, Events Co." }];
   return (
     <section id="testimonials" className="py-16 bg-black/70">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
