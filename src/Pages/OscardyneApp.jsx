@@ -513,7 +513,7 @@ function Contact() {
 
             <div className="mt-6">
               <h4 className="text-sm text-gray-300 mb-2">Office Hours</h4>
-              <div className="text-gray-400 text-sm">Mon — Fri: 08:00 — 18:00</div>
+              <div className="text-gray-400 text-sm">Mon — Sun: 24/7</div>
             </div>
           </div>
         </div>
