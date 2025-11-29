@@ -52,7 +52,7 @@ function Nav({ onOpen }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Oscardyne Logo" className="h-full w-full object-contain rounded-md" />
+            <img src={logo} alt="Oscardyne Logo" className="h-24 w-24 object-contain rounded-md" />
             <div className="text-xl md:text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-400">
               Oscardyne Security Logistics
             </div>
