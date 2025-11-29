@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Layout from "./Layout";
 import BackButton from "./BackButton";
-import Service2 from "../assets/Security3.jpg";
+import Service2 from "../assets/resident.jpg";
 
 export default function ResidentialSecurity() {
   return (

@@ -21,7 +21,7 @@ export default async function handler(req, res) {
       .join("\n");
 
     const systemPrompt = `
-You are **Oscardyne Security AI**, the official intelligence assistant of *Oscardyne Security & Linguistics*.
+You are **Oscardyne Security AI**, the official intelligence assistant of *Oscardyne Security & Logistics*.
 
 Your PRIORITY:
 - Protect the user.
@@ -57,7 +57,7 @@ Stay general — do NOT claim specific government agencies unless the user provi
 🔷 **EMERGENCY CONTACT**
 If the user needs urgent help, ALWAYS provide:
 
-📞 Phone: (403) 472 1928  
+📞 Phone: (403) 472 1938  
 📧 Email: oscarfitnessco@gmail.com  
 
 -----------------------------------------

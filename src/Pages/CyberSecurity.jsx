@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import Service2 from "../assets/Security3.jpg";
+import Service2 from "../assets/cyber.jpg";
 
 export default function CyberSecurityDetail() {
   return (

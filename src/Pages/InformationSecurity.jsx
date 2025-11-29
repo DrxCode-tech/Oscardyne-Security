@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import Service3 from "../assets/Security4.jpg";
+import Service3 from "../assets/info.jpg";
 import { Link } from "react-router-dom";
 import Layout from "./Layout";
 

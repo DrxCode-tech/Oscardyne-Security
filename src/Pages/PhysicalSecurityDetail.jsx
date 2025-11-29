@@ -1,6 +1,6 @@
 import Layout from "./Layout";
 import BackButton from "./BackButton";
-import Service1 from "../assets/Security2.jpg";
+import Service1 from "../assets/physic.jpg";
 
 export default function PhysicalSecurityDetail() {
     return (
