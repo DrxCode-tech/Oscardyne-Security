@@ -121,8 +121,7 @@ export default function CareerDashboard() {
                         </button>
 
                         {/* BIG IMAGE */}
-                        {selected.fileUrl && (
-                            <img
+                        {selected.fileUrl && (                            <img
                                 src={selected.fileUrl}
                                 className="w-full h-80 object-cover rounded-xl mb-6"
                             />

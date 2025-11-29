@@ -1,4 +1,5 @@
 import mailjet from "node-mailjet";
+import { db } from "./firebaseAdmin";
 
 export default async function handler(req, res) {
     if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
@@ -21,6 +22,18 @@ export default async function handler(req, res) {
                 },
             ],
         });
+
+        const snap = await db
+            .collection("careerApplications")
+            .where("email", "==", email)
+            .get();
+
+        const batch = db.batch();
+
+        snap.forEach((doc) => batch.delete(doc.ref));
+
+        await batch.commit();
+
 
         return res.json({ success: true });
 
