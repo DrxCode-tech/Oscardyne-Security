@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, Mail, MapPin, Send, Loader2, Home, Bot, PlayCircle, ShieldCheck,MessageCircle, LogOut } from "lucide-react";
+import { Menu, X, Phone, Mail, MapPin, Send, Loader2, Home, Bot, PlayCircle, ShieldCheck, MessageCircle, LogOut } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaWhatsapp,FaX } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaWhatsapp, FaXTwitter } from "react-icons/fa";
 
 
 import ReactMarkdown from "react-markdown";
@@ -146,7 +146,7 @@ function ParallaxHero() {
   const [offset, setOffset] = useState(0);
   const [index, setIndex] = useState(0);
   const tickRef = useRef(null);
-  const images = [logo,Service1, Service2, Service3, Service4];
+  const images = [logo, Service1, Service2, Service3, Service4];
 
   useEffect(() => {
     const onScroll = () => {
@@ -643,7 +643,7 @@ function Footer() {
           </div>
 
           <p className="text-gray-400 text-xs mt-6">
-            © {new Date().getFullYear()} Oscardyne Fitness and Security Logistics.  
+            © {new Date().getFullYear()} Oscardyne Fitness and Security Logistics.
             <br />All rights reserved.
           </p>
         </div>
@@ -691,7 +691,7 @@ function Footer() {
                 <FaYoutube size={24} />
               </a>
               <a href="https://x.com" target="_blank" className="text-gray-400 hover:text-red-500 transition">
-                <FaX size={24} />
+                <FaXTwitter size={24} />
               </a>
             </div>
           </div>
