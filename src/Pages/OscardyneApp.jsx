@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, Mail, MapPin, Send, Loader2, Home, Bot, PlayCircle, ShieldCheck,MessageCircle, LogOut } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaWhatsapp,FaX } from "react-icons/fa";
 
 
 import ReactMarkdown from "react-markdown";
@@ -630,7 +630,7 @@ function Footer() {
                 className="h-12 w-12 object-contain rounded-lg shadow-md"
               />
               <h2 className="text-lg font-bold text-white tracking-wide">
-                Oscardyne Security Logistics
+                Oscardyne Fitness and Security Logistics
               </h2>
             </div>
 
@@ -643,7 +643,7 @@ function Footer() {
           </div>
 
           <p className="text-gray-400 text-xs mt-6">
-            © {new Date().getFullYear()} Oscardyne Security Logistics.  
+            © {new Date().getFullYear()} Oscardyne Fitness and Security Logistics.  
             <br />All rights reserved.
           </p>
         </div>
@@ -689,6 +689,9 @@ function Footer() {
               </a>
               <a href="https://youtube.com" target="_blank" className="text-gray-400 hover:text-red-500 transition">
                 <FaYoutube size={24} />
+              </a>
+              <a href="https://x.com" target="_blank" className="text-gray-400 hover:text-red-500 transition">
+                <FaX size={24} />
               </a>
             </div>
           </div>
