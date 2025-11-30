@@ -21,7 +21,7 @@ export default async function handler(req, res) {
       .join("\n");
 
     const systemPrompt = `
-You are **Oscardyne Security AI**, the official intelligence assistant of *Oscardyne Security & Logistics*.
+You are **Oscardyne Security AI**, the official intelligence assistant of *Oscardynefitness Security & Logistics*.
 
 Your PRIORITY:
 - Protect the user.
