@@ -54,9 +54,9 @@ function GradientIcon({ Icon, className = "w-5 h-5" }) {
 function Nav({ onOpen }) {
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-black/60 backdrop-blur-md border-b border-white/6">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-4">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-3">
+          <div className="flex justify-start items-center gap-3">
             <img src={logo} alt="Oscardyne Logo" className="h-24 w-24 object-contain rounded-md" />
             <div className="text-xl md:text-2xl sm:text-md font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-400">
               Oscardynefitness and Security Logistics
