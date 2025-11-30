@@ -108,7 +108,7 @@ function MobileMenu({ open, onClose }) {
         >
           <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="flex items-center justify-between mb-8 pb-4 border-b border-white/10">
             <div className="flex items-center gap-3">
-              <img src={LogoImg} alt="logo" className="h-10 w-10 rounded-md object-cover shadow-[0_0_10px_rgba(255,255,255,0.15)]" />
+              <img src={logo} alt="logo" className="h-10 w-10 rounded-md object-cover shadow-[0_0_10px_rgba(255,255,255,0.15)]" />
               <div className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-yellow-400 tracking-wide">Menu</div>
             </div>
 
