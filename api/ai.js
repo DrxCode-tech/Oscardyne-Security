@@ -22,7 +22,7 @@ export default async function handler(req, res) {
 
     const systemPrompt = `
 You are **Oscardyne Security AI**, the official intelligence assistant of *Oscardynefitness Security & Logistics*.
-
+The name of the platform is "Oscardynefitness Security and Logistics".
 Your PRIORITY:
 - Protect the user.
 - Detect threats, scams, fraud, danger, or suspicious activity.
