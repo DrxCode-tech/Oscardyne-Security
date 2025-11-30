@@ -58,8 +58,8 @@ function Nav({ onOpen }) {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
             <img src={logo} alt="Oscardyne Logo" className="h-24 w-24 object-contain rounded-md" />
-            <div className="text-xl md:text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-400">
-              Oscardyne Security Logistics
+            <div className="text-xl md:text-2xl sm:text-md font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-400">
+              Oscardynefitness and Security Logistics
             </div>
           </div>
 
@@ -197,7 +197,7 @@ function ParallaxHero() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
         <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
-          Oscardyne Fitness and Security Logistics
+          Oscardynefitness and Security Logistics
         </motion.h1>
 
         <motion.p initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.12 }} className="mt-6 text-gray-300 max-w-2xl mx-auto">
@@ -583,7 +583,7 @@ function AIChat() {
   return (
     <div id="oscardyne_ai" className="w-full max-w-3xl mx-auto my-10 p-6 rounded-3xl bg-black/50 backdrop-blur-xl shadow-[0_15px_40px_rgba(0,0,0,0.5)]">
       <div className="text-center mb-6">
-        <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-400">Oscard Security AI</h2>
+        <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-400">Oscardyne Security AI</h2>
       </div>
 
       <div className="flex flex-col gap-4 mb-4 p-6 rounded-2xl bg-black/30 backdrop-blur-lg shadow-inner">
@@ -635,7 +635,7 @@ function Footer() {
                 className="h-12 w-12 object-contain rounded-lg shadow-md"
               />
               <h2 className="text-lg font-bold text-white tracking-wide">
-                Oscardyne Fitness and Security Logistics
+                Oscardynefitness and Security Logistics
               </h2>
             </div>
 
